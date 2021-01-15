@@ -126,12 +126,12 @@ class CategoryController extends Controller
                     }
                     
                 }
-            else
-            {
-                return response()->json([
-                    'Not Found'
-                ], 404);
-            }
+                else
+                {
+                    return response()->json([
+                        'Not Found'
+                    ], 404);
+                }
             }else{
                 return response()->json([
                     'Not Authorized'
